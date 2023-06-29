@@ -6,6 +6,7 @@
     display: inline-block;
 }
 
+
 .cabeçalho {
     background-color: var(--branco);
     display: flex;
@@ -13,11 +14,19 @@
     align-items: center;
 }
 
-.conteiner {
+.container {
     display: flex;
     align-items: center;
 }
 
 .conteiner__imagem {
     padding: 1em;
+}
+
+.lista-menu {
+    display: none;
+}
+
+.container__botao:checked~.lista-menu {
+    display: block;
 }
